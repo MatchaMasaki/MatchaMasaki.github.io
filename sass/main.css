@@ -1,0 +1,390 @@
+/* line 3, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 16, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #808080; }
+
+/* line 22, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+li {
+  list-style: none; }
+
+/* line 27, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  border: 0; }
+  /* line 33, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+  body #globalHeader {
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 40; }
+    /* line 42, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body #globalHeader .container-middle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      /* line 48, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body #globalHeader .container-middle .title-logo {
+        line-height: 80px;
+        font-size: 20px;
+        visibility: hidden; }
+    /* line 56, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body #globalHeader .globalNav {
+      display: none; }
+    /* line 60, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body #globalHeader .headC {
+      display: none; }
+    /* line 64, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body #globalHeader .container-small {
+      margin: 0 10px auto;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      /* line 71, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body #globalHeader .container-small .headA {
+        margin: 0;
+        padding: 0; }
+        /* line 75, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+        body #globalHeader .container-small .headA h1 {
+          margin: 0;
+          font-size: 20px;
+          line-height: 80px;
+          color: #808080; }
+      /* line 85, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body #globalHeader .container-small .headB ul {
+        padding-left: 0px;
+        margin: 0; }
+        /* line 89, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+        body #globalHeader .container-small .headB ul li {
+          display: inline-block;
+          line-height: 80px;
+          padding-left: 20px; }
+          /* line 94, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+          body #globalHeader .container-small .headB ul li #index {
+            padding-left: 0; }
+  /* line 105, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+  body .top-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    text-align: center; }
+    /* line 112, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body .top-wrap .top-txt {
+      padding-top: 160px; }
+      /* line 115, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .top-wrap .top-txt img {
+        width: 20%; }
+      /* line 119, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .top-wrap .top-txt h1 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        letter-spacing: 0.16em;
+        margin-left: 0.2em; }
+      /* line 126, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .top-wrap .top-txt h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 18px;
+        letter-spacing: 0.1em; }
+    /* line 135, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body .top-wrap #top-global-nav {
+      padding-top: 150px; }
+      /* line 138, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .top-wrap #top-global-nav ul {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding-left: 0; }
+      /* line 147, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .top-wrap #top-global-nav li {
+        flex: 1; }
+        /* line 150, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+        body .top-wrap #top-global-nav li a {
+          width: 90%;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          position: relative; }
+          /* line 156, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+          body .top-wrap #top-global-nav li a::after {
+            width: 0%;
+            height: 100%;
+            border-radius: 5px;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .5s;
+            z-index: -1; }
+          /* line 168, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+          body .top-wrap #top-global-nav li a::before {
+            width: 0%; }
+          /* line 172, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+          body .top-wrap #top-global-nav li a:hover {
+            color: #fff;
+            transition: all .5s; }
+          /* line 177, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+          body .top-wrap #top-global-nav li a:hover::after {
+            background-color: #000;
+            width: 100%; }
+      /* line 185, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .top-wrap #top-global-nav li:not(:last-child) {
+        border-right: 2px solid #eee; }
+    /* line 190, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body .top-wrap .footer {
+      padding-top: 65px;
+      padding-bottom: 20px; }
+      /* line 194, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .top-wrap .footer .contact-sns a {
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        border: 1px solid #eee;
+        color: #000;
+        background-color: #fff;
+        transition: all .5s; }
+      /* line 207, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .top-wrap .footer .contact-sns a:hover {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.8); }
+  /* line 214, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+  body .profile-wrap {
+    margin: 0;
+    padding-top: 80px;
+    text-align: center; }
+    /* line 220, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body .profile-wrap .name-card {
+      width: 100%;
+      padding-bottom: 40px; }
+      /* line 224, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .profile-wrap .name-card img {
+        width: 200px;
+        line-height: 200px;
+        border-radius: 50%;
+        border: 2px solid #ddd; }
+      /* line 231, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .profile-wrap .name-card p {
+        font-weight: bold;
+        font-size: 18px; }
+    /* line 237, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body .profile-wrap .history-card {
+      width: 100%; }
+      /* line 240, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .profile-wrap .history-card p {
+        margin: 0;
+        padding: 5px 10px; }
+  /* line 248, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+  body .skills-wrap {
+    text-align: center;
+    padding: 40px 20px; }
+    /* line 252, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body .skills-wrap .container {
+      display: flex; }
+      /* line 255, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .skills-wrap .container .skill-item {
+        flex: 1; }
+        /* line 258, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+        body .skills-wrap .container .skill-item span {
+          width: 100px;
+          line-height: 100px;
+          border-radius: 50%;
+          background-color: #ddd;
+          color: #fff;
+          font-size: 50px; }
+        /* line 267, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+        body .skills-wrap .container .skill-item p {
+          display: inline-block;
+          font-size: 14px;
+          width: 80%; }
+    /* line 275, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body .skills-wrap h3 {
+      padding-bottom: 30px; }
+  /* line 280, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+  body footer {
+    text-align: center;
+    margin: 0 auto; }
+    /* line 284, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body footer h3 {
+      font-size: 24px; }
+    /* line 288, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body footer .container {
+      margin-bottom: 40px; }
+      /* line 291, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body footer .container .contact-sns a {
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        border: 1px solid #eee;
+        color: #000;
+        background-color: #fff;
+        transition: all .5s; }
+      /* line 304, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body footer .container .contact-sns a:hover {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.8); }
+  /* line 312, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+  body .about-wrap {
+    text-align: center;
+    margin-bottom: 60px; }
+    /* line 316, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body .about-wrap h3 {
+      margin-top: 15px;
+      margin-bottom: 30px;
+      font-size: 28px; }
+    /* line 322, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body .about-wrap p {
+      text-align: left;
+      display: inline-block;
+      margin: 5px;
+      line-height: 1.6;
+      font-size: 14px;
+      width: 50%;
+      opacity: 0.7; }
+  /* line 334, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+  body .contact-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 80px; }
+    /* line 339, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body .contact-wrap h3 {
+      text-align: center;
+      font-size: 28px; }
+    /* line 344, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+    body .contact-wrap #contact-form {
+      margin: 0 auto;
+      width: 500px; }
+      /* line 349, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .contact-wrap #contact-form .contact-title {
+        text-align: center; }
+        /* line 352, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+        body .contact-wrap #contact-form .contact-title h3 {
+          font-size: 22px; }
+      /* line 359, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .contact-wrap #contact-form .input-wrap dl {
+        margin: 0 0 20px 0; }
+      /* line 364, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .contact-wrap #contact-form .input-wrap dt {
+        width: 380px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        margin-left: 85px;
+        font-size: 16px;
+        line-height: 1.5;
+        height: 24px;
+        padding: 3px 0;
+        text-indent: -48px; }
+        /* line 375, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+        body .contact-wrap #contact-form .input-wrap dt span {
+          font-size: 12px;
+          margin-right: 10px;
+          display: inline;
+          line-height: 16px;
+          padding: 3px 10px;
+          color: #ffffff;
+          height: 14px;
+          border-radius: 5px; }
+          /* line 385, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+          body .contact-wrap #contact-form .input-wrap dt span.req {
+            background-color: #ff7b7b; }
+          /* line 389, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+          body .contact-wrap #contact-form .input-wrap dt span.any {
+            background-color: #ccc; }
+      /* line 395, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .contact-wrap #contact-form .input-wrap dd {
+        font-size: 16px;
+        line-height: 1.5;
+        height: auto; }
+        /* line 400, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+        body .contact-wrap #contact-form .input-wrap dd input[type="text"].inp_error,
+        body .contact-wrap #contact-form .input-wrap dd input[type="number"].inp_error,
+        body .contact-wrap #contact-form .input-wrap dd input[type="tel"].inp_error,
+        body .contact-wrap #contact-form .input-wrap dd
+        input[type="email"].inp_error,
+        body .contact-wrap #contact-form .input-wrap dd textarea.inp_error {
+          border: 1px solid #f88a8a;
+          background: #f4d4d4; }
+        /* line 408, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+        body .contact-wrap #contact-form .input-wrap dd textarea {
+          width: 450px;
+          padding: 10px 3px 10px 10px; }
+        /* line 413, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+        body .contact-wrap #contact-form .input-wrap dd li {
+          display: inline-block;
+          margin: 0 15px 0 0;
+          line-height: 24px;
+          height: 24px;
+          padding: 3px 0; }
+        /* line 421, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+        body .contact-wrap #contact-form .input-wrap dd input[type="text"],
+        body .contact-wrap #contact-form .input-wrap dd input[type="number"],
+        body .contact-wrap #contact-form .input-wrap dd input[type="email"],
+        body .contact-wrap #contact-form .input-wrap dd input[type="tel"] {
+          margin: 0 auto;
+          width: 450px;
+          font-size: 18px;
+          height: 30px;
+          padding: 3px 0 3px 10px;
+          margin: 0; }
+      /* line 434, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .contact-wrap #contact-form .input-wrap .transmission input[type="submit"] {
+        border: 1px solid #ddd;
+        background: #b3b3b3;
+        font-size: 16px;
+        box-shadow: 0 4px 0 #ddd;
+        color: #fff;
+        border-radius: 5px;
+        width: 200px;
+        padding: 10px 0;
+        margin: 25px 0 25px 160px;
+        display: block;
+        opacity: 1.0;
+        transition: .3s; }
+        /* line 448, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+        body .contact-wrap #contact-form .input-wrap .transmission input[type="submit"]:hover {
+          margin-top: 29px;
+          box-shadow: none;
+          background-color: #666;
+          opacity: 1;
+          transition: .3s; }
+      /* line 457, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .contact-wrap #contact-form .input-wrap #energy_contact #send_status {
+        padding: 5px 0 25px;
+        text-align: center; }
+        /* line 461, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+        body .contact-wrap #contact-form .input-wrap #energy_contact #send_status p {
+          width: 450px;
+          margin: 0 auto;
+          padding: 0 15px;
+          line-height: 50px;
+          font-size: 25px;
+          border: 1px solid #3c763d;
+          border-radius: 4px;
+          background-color: #dff0d8;
+          color: #3c763d; }
+      /* line 474, /Users/yamamuramasami/Desktop/Portforio.new/sass/main.scss */
+      body .contact-wrap #contact-form .input-wrap span.error_m {
+        font-size: 15px;
+        font-weight: normal;
+        color: #ff4040;
+        display: block;
+        margin: 0; }
+
+/*# sourceMappingURL=main.css.map */

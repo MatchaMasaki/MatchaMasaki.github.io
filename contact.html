@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="山村昌己,Masaki Yamamura,昌己,Masaki">
+    <meta property="og:title" content="Masaki Design Portforio">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Masaki Design Portforioは、シンプルでいてアート性の高いポートフォリオサイトというのがコンセプトです。">
+    <meta property="og:site_name" content="Masaki Design Portforio">
+    <link rel="stylesheet" type="text/css" href="sass/main.css">
+    <link rel="stylesheet" type="text/css" href="sass/responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>Masaki Design Portforio</title>
+</head>
+<body>
+   <header id="globalHeader">
+       <div class="container-small">
+           <div class="headA">
+               <h1 class="title-logo">
+               <a href="index.html">Masaki Design Portforio</a>
+               </h1>
+           </div>
+           <div class="nav-toggle headC">
+               <span class="fas fa-bars" id="menu-bar"></span>
+           </div>
+           <div class="headB" id="nav-right">
+               <nav>
+                   <ul>
+                       <li>
+                           <a id="index" href="index.html">Top</a>
+                       </li>
+                       <li>
+                           <a id="profile" href="profile.html">Profile</a>
+                       </li>
+                       <li>
+                           <a id="about" href="about.html">About</a>
+                       </li>
+                       <li>
+                           <a id="contact" href="contact.html">Contact</a>
+                       </li>
+                   </ul>
+               </nav>
+           </div>
+       </div>
+       <nav class="globalNav" id="nav-none">
+          <ul>
+           <li>
+               <a id="index" href="index.html">Top</a>
+           </li>
+           <li>
+                <a id="profile" href="profile.html">Profile</a>
+           </li>
+           <li>
+               <a id="about" href="about.html">About</a>
+           </li>
+           <li>
+               <a id="contact" href="contact.html">contact</a>
+           </li>
+       </ul>
+       </nav>
+   </header>
+   <section class="contact-wrap">
+       <h3>Contact</h3>
+       <div id="contact-form">
+          <div class="contact-title">
+           <h3>Input form</h3>
+           </div>
+           <form action="#" onsubmit="return input_check();" name="form1">
+                <div class="input-wrap">
+                    <dl class="clearfix">
+                        <dt>名前<span class="req">必須</span></dt>
+                        <dd>
+                            <input type="text" id="name" name="name">
+                            <span id="name_error" class="error_m"></span>
+                        </dd>
+                    </dl>
+                    
+                    <dl class="clearfix">
+                        <dt>フリガナ<span class="req">必須</span></dt>
+                        <dd>
+                            <input type="text" id="furigana" name="furigana">
+                            <span id="furigana_error" class="error_m"></span>
+                        </dd>
+                    </dl>
+                    
+                    <dl class="clearfix">
+                        <dt>ユーザー名<span class="any">任意</span></dt>
+                        <dd>
+                            <input type="text" id="username" name="username">
+                            <span id="username_error" class="error_m"></span>
+                        </dd>
+                    </dl>
+                    
+                    <dl class="clearfix">
+                        <dt>電話番号<span class="req">必須</span></dt>
+                        <dd>
+                            <input type="tel" id="tel" name="tel">
+                            <span id="tel_error" class="error_m"></span>
+                        </dd>
+                    </dl>
+                    
+                    <dl class="clearfix">
+                        <dt>メールアドレス<span class="req">必須</span></dt>
+                        <dd>
+                            <input type="email" id="email" name="email">
+                            <span id="email_error" class="error_m"></span>
+                        </dd>
+                    </dl>
+                    
+                    <dl class="clearfix">
+                        <dt>お問い合わせ内容(500文字以内)<span class="req">必須</span></dt>
+                        <dd>
+                            <textarea name="remarks" id="remarks" cols="50" rows="10"></textarea>
+                            <span id="remarks_error" class="error_m"></span>
+                        </dd>
+                    </dl>
+                    
+                    <div class="transmission">
+                        <input id="btn_submit" type="submit" value="内容を送信">
+                    </div>
+                    
+                </div>
+           </form>
+       </div>
+   </section>
+   <footer>
+       <h3 class="section-title">Other contact</h3>
+       <div class="container">
+       <div class="contact-sns">
+          <a href="#">
+           <span class="fab fa-facebook-f"></span>
+          </a>
+          <a href="#">
+           <span class="fab fa-twitter"></span>
+          </a>
+          <a href="#">
+           <span class="fab fa-instagram"></span>
+          </a>
+       </div>
+       </div>
+   </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
